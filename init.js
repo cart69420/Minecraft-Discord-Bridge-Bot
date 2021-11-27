@@ -8,4 +8,5 @@ exports.init = function() {
         process.env.MC_SERVER_IP, 
         process.env.MC_SERVER_PORT
     );
+    require("./communication/webserver").init(process.env.WEBSERVER_PORT);
 }

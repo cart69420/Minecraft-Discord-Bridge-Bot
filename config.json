@@ -3,6 +3,27 @@
         "prefix": ">"
     },
     "discord": {
-        "prefix": ">"
+        "prefix": ">",
+        "bridge": {
+            "channels": [
+                "0123456789098765421",
+                "1234567890028937515"
+            ],
+            "embed": {
+                "colors": {
+                    "error": "RED",
+                    "success": "GREEN",
+                    "info": "BLUE",
+                    "join": "YELLOW",
+                    "leave": "RED",
+                    "default": "GRAY"
+                },
+                "formats": {
+                    "join": "**%username** has joined the server.",
+                    "leave": "**%username** has left the server.",
+                    "message": "**<%username>** %message"
+                }
+            }
+        }
     }
 }

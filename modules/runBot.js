@@ -5,13 +5,14 @@ const { Client, Intents, Collection } = require('discord.js');
 const runMC = (username, password, ip, port, version) => {
     const bot = mineflayer.createBot({
         host: ip || 'localhost',
-        port: port || 25565,
-        username: username || 'BridgeBot',
-        password: password || undefined,
+        port: port ? parseInt(port) : 25565,
+        username: username ? username : 'BridgeBot',
+        password: password ? password : false,
         version: version || false,
     });
     bot.prefix = config.minecraft.prefix;
     bot.commands = new Map();
+    bot.config = config;
     return bot
 }
 const runDiscord = (token) => {
@@ -20,6 +21,7 @@ const runDiscord = (token) => {
     client.login(token);
     client.prefix = config.discord.prefix;
     client.commands = new Collection();
+    client.config = config;
     return client
 }
 
