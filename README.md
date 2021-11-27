@@ -4,6 +4,7 @@ funny
 Current features:
 - Run Minecraft bot/Discord bot
 - Commands & Events with handlers
+
 Coming up soon:
 - MC to Discord/Discord to MC chat bridge
 - Command cooldown system
