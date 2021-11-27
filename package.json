@@ -1,0 +1,19 @@
+{
+  "name": "minecraft-discord-bridge",
+  "version": "1.0.0",
+  "description": "minecraft to discord bridge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.3.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "mineflayer": "^3.11.2"
+  }
+}
